@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Quote Generator</title>
+    <title>Генератор случайных цитат</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -49,21 +49,21 @@
 <body>
 
     <div class="container">
-        <h1>Random Quote Generator</h1>
-        <p id="quote">Click the button to get a new quote!</p>
-        <button onclick="generateQuote()">Get Quote</button>
+        <h1>Генератор случайных цитат</h1>
+        <p id="quote">Нажмите на кнопку, чтобы получить новую цитату!</p>
+        <button onclick="generateQuote()">Получить цитату</button>
     </div>
 
     <script>
         const quotes = [
-            "The best way to predict the future is to invent it. - Alan Kay",
-            "Life is 10% what happens to us and 90% how we react to it. - Charles R. Swindoll",
-            "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
-            "You miss 100% of the shots you don’t take. - Wayne Gretzky",
-            "Believe you can and you're halfway there. - Theodore Roosevelt",
-            "The only way to do great work is to love what you do. - Steve Jobs",
-            "It does not matter how slowly you go as long as you do not stop. - Confucius",
-            "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well. - Ralph Waldo Emerson"
+            "Лучший способ предсказать будущее — это изобрести его. - Алан Кей",
+            "Жизнь на 10% состоит из того, что с нами происходит, и на 90% из того, как мы на это реагируем. - Чарльз Р. Суиндолл",
+            "Успех не окончателен, неудача не фатальна: важна смелость продолжать. - Уинстон Черчилль",
+            "Вы промахнетесь в 100% случаев, если не будете пытаться. - Уэйн Гретцки",
+            "Поверьте, что вы можете, и вы уже на полпути. - Теодор Рузвельт",
+            "Единственный способ делать великие дела — любить то, что вы делаете. - Стив Джобс",
+            "Неважно, насколько медленно вы идете, главное — не останавливаться. - Конфуций",
+            "Цель жизни не в том, чтобы быть счастливым. Она в том, чтобы быть полезным, благородным, сострадательным, чтобы ваша жизнь имела значение и вы прожили ее достойно. - Ральф Уолдо Эмерсон"
         ];
 
         function generateQuote() {
