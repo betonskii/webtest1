@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4682b4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Random Quote Generator</h1>
+        <p id="quote">Click the button to get a new quote!</p>
+        <button onclick="generateQuote()">Get Quote</button>
+    </div>
+
+    <script>
+        const quotes = [
+            "The best way to predict the future is to invent it. - Alan Kay",
+            "Life is 10% what happens to us and 90% how we react to it. - Charles R. Swindoll",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+            "You miss 100% of the shots you don’t take. - Wayne Gretzky",
+            "Believe you can and you're halfway there. - Theodore Roosevelt",
+            "The only way to do great work is to love what you do. - Steve Jobs",
+            "It does not matter how slowly you go as long as you do not stop. - Confucius",
+            "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well. - Ralph Waldo Emerson"
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').textContent = quotes[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
